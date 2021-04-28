@@ -1,0 +1,100 @@
+body {
+    background-color: rgb(219, 219, 219);
+    overflow: hidden;
+}
+
+.webapp {
+    margin: auto;
+    margin-top: 30px;
+    max-width: 330px;
+    background-color: black;
+    font-family: raleway;
+    box-shadow: 3px 3px 25px rgba(2, 0, 0, 0.37);
+}
+#scroller {
+    overflow: auto;
+    height: 590px;
+}
+.homepage {
+    background-image: url('assets/images/home-bg.gif');
+    background-size:contain;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    'home home'
+    'create login';
+    padding-left: 40px;
+    margin: 0;
+    max-width: 330px;
+    height: 590px;
+}
+
+.home{
+    grid-area: home;
+    padding-right: 60px;
+    line-height: 1.4;
+    padding-top: 390px;
+    padding-bottom: 0px;
+    font-family: raleway;
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
+    margin: 0;
+}
+.create{
+    grid-area: create;
+    margin-bottom: 20px;
+}
+.login{
+    grid-area: login;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+#createbutton{
+    padding: 10px 20px;
+    outline: none;
+    font-family: raleway;
+    border: none;
+    border-radius: 6px;
+    background-color: #FF8941;
+    color: white;
+    font-size: 14px;
+    text-shadow: 2px 2px 8px rgba(2, 0, 0, 0.37);
+}
+#loginbutton{
+    padding: 10px 30px;
+    outline: none;
+    font-family: raleway;
+    border: none;
+    border-radius: 6px;
+    background-color: #FF4BC2;
+    color: white;
+    font-size: 14px;
+    text-shadow: 2px 2px 8px rgba(2, 0, 0, 0.37);
+    cursor: pointer;
+}
+/* unvisited link */
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: white;
+    text-decoration: none;
+}

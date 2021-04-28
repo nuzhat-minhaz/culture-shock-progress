@@ -1,0 +1,119 @@
+body {
+    background-color: rgb(219, 219, 219);
+    overflow: hidden;
+}
+
+.webapp {
+    margin: auto;
+    margin-top: 30px;
+    max-width: 330px;
+    background-color: black;
+    font-family: raleway;
+    box-shadow: 3px 3px 25px rgba(2, 0, 0, 0.37);
+}
+#scroller {
+    overflow: auto;
+    height: 590px;
+}
+img {
+    object-fit: contain;
+    border: none;
+    outline: none;
+    margin: 0;
+    width: 100%;
+}
+.login {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    'header-area header-area'
+    'in-field in-field'
+    'img-area img-area';
+    padding-left: 0px;
+    margin: 0;
+    max-width: 330px;
+    height: 590px;
+}
+
+.in-field{
+    grid-area: in-field;
+    line-height: 1.4;
+    padding-bottom: 0px;
+    font-family: raleway;
+    font-weight: 400;
+    font-size: 13px;
+    color: rgb(44, 44, 44);
+    margin: 0;
+    background-color: #ffffff;
+    padding: 30px;
+    padding-top: 0;
+}
+.header-area{
+    grid-area: header-area;
+    margin-bottom: 0px;
+    padding: 0;
+    background-color: white;
+}
+.img-area{
+    grid-area: img-area;
+    padding: none;
+    margin: none;
+    background-color: white;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    font-family: raleway;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    font-family: raleway;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#submit {
+    width: 100%;
+    background-color: #e04343;
+    color: white;
+    font-family: raleway;
+    text-shadow: 2px 2px 8px rgba(2, 0, 0, 0.37);
+    font-size: 16px;
+    padding: 14px 20px;
+    margin: 0px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: raleway;
+}
+
+#submit:hover {
+    background-color: #bd2d2d;
+    transition: 0.5s ease-out;
+}
+
+
+.in-field h2{
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 20px;
+    margin: 0;
+    color: black;
+    font-family: raleway;
+    font-weight: 600;
+}
